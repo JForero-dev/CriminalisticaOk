@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CriminalísticaOk</title>
+    <link rel="icon" href="Static/Images/Logo-GV-PNG_1.ico">
+    <link rel="stylesheet" href="Static/styles/style.css">
+    <link rel="stylesheet" href="Static/styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <b><span>Criminalística<span class="yellow">Ok</span></span></b>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link"><b>Home</b></a></li>
+                <li><a href="#servicios" class="nav-link"><b>Services</b></a></li>
+                <li><a href="#sobre-nosotros" class="nav-link"><b>About Us</b></a></li>
+                <li><a href="#testimonios" class="nav-link"><b>Testimonials</b></a></li>
+                <li><a href="#contacto" class="nav-link"><b>Contact</b></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero-wrapper">
+        <div class="hero-background"></div>
+    
+        <div class="hero-custom">
+            <div class="hero-text-blur">
+                <div class="hero-text">
+                    <h1 class="hero-title">Let's promote learning</h1>
+                    <p class="hero-subtitle">A place to learn, share and make visible the work of forensic professionals.</p>
+                </div>
+            </div>
+    
+            <div class="hero-graphic">
+                <img src="Static/Images/Logo CK.png" alt="Escudo Criminalística">
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="services">
+        <div class="section-header">
+            <h2 class="blue">Our Services</h2>
+            <p class="black">Services we offer</p>
+        </div>
+        <div class="services-container">
+            <div class="service-card" data-aos="fade-up" data-service="capacitaciones">
+                <div class="service-icon">
+                    <i class="fa-solid fa-user-graduate"></i>
+                </div>
+                <h3>Training</h3>
+                <button class="btn-more">see more</button>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100" data-service="asesoramiento">
+                <div class="service-icon">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                </div>
+                <h3>Expert advice</h3>
+                <button class="btn-more">see more</button>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100" data-service="pericias">
+                <div class="service-icon">
+                    <i class="fa-solid fa-file"></i>
+                </div>
+                <h3>Expertise and accident reports</h3>
+                <button class="btn-more">see more</button>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200" data-service="art">
+                <div id="servicio1"  class="service-icon">
+                    <i class="fa-solid fa-file-contract"></i>
+                </div>
+                <h3>ART in itinere / Occupational Accident Reports</h3>
+                <button class="btn-more">see more</button>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300" data-service="analisis">
+                <div class="service-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <h3>Analysis and reconstruction of the crime scene</h3>
+                <button class="btn-more">see more</button>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300" data-service="informes">
+                <div class="service-icon">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                </div>
+                <h3>Technical expert reports</h3>
+                <button class="btn-more">see more</button>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300" data-service="puntos">
+                <div id="servicio2" class="service-icon">
+                    <i class="fa-solid fa-paperclip"></i>
+                </div>
+                <h3>Expert's points</h3>
+                <button class="btn-more">see more</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal-overlay" id="modalOverlay">
+
+    <div class="modal" id="modal-capacitaciones">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Training Programs</h2>
+            <div class="modal-body">
+                <p class="black">We offer training programs designed to cover all branches of criminalistics, providing up-to-date theoretical and practical tools for students, professionals, and individuals interested in the forensic field.</p>
+                <br>
+                <div class="centered-contact">
+                    <a href="https://wa.me/+5492645746015?" target="_blank" class="whatsapp-button">
+                        <i class="fab fa-whatsapp"></i> Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-asesoramiento">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Expert Advice - <b class="no-disponible">NOT AVAILABLE</b></h2>
+            <br>
+            <div class="centered-contact">
+                <a href="https://wa.me/+5492645746015?" target="_blank" class="whatsapp-button">
+                    <i class="fab fa-whatsapp"></i> Contact
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-pericias">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Accidentology Reports and Assessments - <b class="no-disponible">NOT AVAILABLE</b></h2>
+            <div class="modal-body">
+                <br>
+                <div class="centered-contact">
+                    <a href="https://wa.me/+5492645746015?" target="_blank" class="whatsapp-button">
+                        <i class="fab fa-whatsapp"></i> Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-art">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Work Accident / Commuting Reports (ART) - <b class="no-disponible">NOT AVAILABLE</b></h2>
+            <div class="centered-contact">
+                <a href="https://wa.me/+5492645746015?" target="_blank" class="whatsapp-button">
+                    <i class="fab fa-whatsapp"></i> Contact
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-analisis">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Crime Scene Analysis and Reconstruction - <b class="no-disponible">NOT AVAILABLE</b></h2>
+            <div class="centered-contact">
+                <a href="https://wa.me/+5492645746015?" target="_blank" class="whatsapp-button">
+                    <i class="fab fa-whatsapp"></i> Contact
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-informes">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Expert Technical <br>Reports - <b class="no-disponible">NOT AVAILABLE</b></h2>
+            <div class="centered-contact">
+                <a href="https://wa.me/+5492645746015?" target="_blank" class="whatsapp-button">
+                    <i class="fab fa-whatsapp"></i> Contact
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-puntos">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Expert Witness Questions - <b class="no-disponible">NOT AVAILABLE</b></h2>
+            <div class="centered-contact">
+                <a href="https://wa.me/+5492645746015?" target="_blank" class="whatsapp-button">
+                    <i class="fab fa-whatsapp"></i> Contact
+                </a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <section id="sobre-nosotros" class="about">
+        <div class="about-image-carousel" data-aos="fade-right">
+            <div class="carousel-track">
+                <img src="Static/Images/IMGCOK1.JPG" alt="Nuestro equipo">
+                <img src="Static/Images/cokHUELLA.jpg" alt="Nuestro equipo">
+                <img src="Static/Images/IMGCOKK.jpeg" alt="Nuestro equipo">
+                <img src="Static/Images/asda (2).JPG" alt="Nuestro equipo">
+                <img src="Static/Images/IMG_0262.JPG" alt="Nuestro equipo">
+                <img src="Static/Images/asda (1).JPG" alt="Nuestro equipo">
+                <img src="Static/Images/IMG_9676.PNG" alt="Nuestro equipo">
+            </div>
+        </div>
+        <div class="about-content" data-aos="fade-left">
+            <h2>About Us</h2>
+            <p>If criminalistics is your passion, this is your place. At CRIMINALÍSTICAOK, we are dedicated to sharing valuable content for forensic professionals and students. You will find updated information, key definitions, events such as congresses and trainings, and also motivational content to inspire you on your way.</p>
+            <p> Forensic science is constantly evolving, and our goal is to provide you with the tools and knowledge you need to keep growing. Join our community and keep up to date with the fascinating world of forensic science.</p>
+            <!--
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="25">0</span>
+                    <span class="stat-text">Proyectos Completados</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="12">0</span>
+                    <span class="stat-text">Clientes Satisfechos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="10">0</span>
+                    <span class="stat-text">Premios Ganados</span>
+            </div>-->
+        </div>
+    </section>
+
+    <section id="testimonios" class="testimonials">
+        <div class="section-header">
+            <h2>Testimonials & Reviews</h2>
+            <p>What do other crime professionals think about our work?</p>
+        </div>
+        <div class="testimonial-slider">
+            <div class="testimonial-slide active">
+                <div class="testimonial-content">
+                    <div class="testimonial-text">
+                        <p>"Congratulations to the CriminalísticaOk team, especially Gonzalo Vera. I have appreciated the seriousness and commitment in the dissemination of knowledge of Forensic Sciences. I celebrate the launching of your new Web Page, an important step that reflects your spirit of improvement and your contribution to the community from a modern and professional point of view.
+                        <br>
+                        Congratulations on this achievement and may you continue to reap success!
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="Static/Images/Ivan B.png" alt="Cliente 1">
+                        <div class="author-info">
+                            <h4>Lic. Iván Berón</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-content">
+                    <div class="testimonial-text">
+                        <p>"Since I started my journey through the world of criminalistics, I met many pages and professionals who talk about forensic science in general, but few with the professionalism and commitment that has the team of criminalísticaok. The work they do is admirable, they have earned international recognition. I invite you all to follow them in their networks. This team deserves to keep growing. I send them my best wishes for success and all the support they need."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="Static/Images/edited.png" alt="Cliente 2">
+                        <div class="author-info">
+                            <h4>Lic. Iturbide Gerónimo</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-content">
+                    <div class="testimonial-text">
+                        <p>“I started to follow the page since its beginnings, demonstrating an enormous potential in the transmission of Criminalistic knowledge for all those who are interested in this exciting world, an issue that today is corroborated with concrete facts, such as the quality of the information it provides and the scope it is having.”</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="Static/Images/arbazua.jpg" alt="Cliente 3">
+                        <div class="author-info">
+                            <h4>Lic. Abarzua Cristian</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-content">
+                    <div class="testimonial-text">
+                        <p>"Congratulations to the entire team of CriminalisticsOk! <br>
+                            I have always seen the seriousness and professional style of your publications as outstanding. <br>
+                            Now with a great spirit of improvement, this Page is made available to all those in the field of criminalistics.  It is a great step forward! Congratulations and may you have many successes!"</p>
+                    </div>                             
+                    <div class="testimonial-author">
+                        <img src="Static/Images/mora.jpg" alt="Cliente 3">
+                        <div class="author-info">
+                            <h4>Jorge Luis Mora</h4>
+                            <p>National Public Calligrapher<br>
+                                Neuropsychoeducator</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-content">
+                    <div class="testimonial-text">
+                        <p>"This page surprises me day by day, it has been accepted by almost all official entities and provides current events and knowledge. Its creators know about what they publish, and it is evident that they like the profession. Despite its short life, it is already recognized. Follow it and collaborate with it".</p>
+                    </div>                             
+                    <div class="testimonial-author">
+                        <img src="Static/Images/sergio23.jpg" alt="Cliente 3">
+                        <div class="author-info">
+                            <h4>Lic. Sergio Gustavo Vera</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">`
+                <button class="prev-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="next-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right">
+                <h2>Contact Us!</h2>
+                <p>We are here to answer your questions and discuss how we can help you.</p>
+                <!--<div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+54 9 2645 74-6015</p>
+                </div>-->
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p class="selectable">infocriminalisticaok@gmail.com</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/criminal%C3%ADstica-ok-41b00b2b1/" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/criminalisticaok/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@criminalisticaok" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@Criminal%C3%ADsticaOk" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100085908181604" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div class="centered-contact">
+                    <a href="https://wa.me/+5492645746015?" target="_blank" class="whatsapp-button">
+                        <i class="fab fa-whatsapp"></i> Contact
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-image" data-aos="fade-left">
+                <img src="Static/Images/IMGCOK.jpeg" alt="Imagen contacto">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <b><span>CriminalísticaOk</span></b>
+                <p>Let's promote learning</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#inicio">Home</a></li>
+                        <li><a href="#servicios">Services</a></li>
+                        <li><a href="#sobre-nosotros">About Us</a></li>
+                        <li><a href="#testimonios">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#servicios">Trainings</a></li>
+                        <li><a href="#servicios">Expert advice</a></li>
+                        <li><a href="#servicios">Accident reports and expert opinions</a></li>
+                        <li><a href="#servicio1">ART in itinere / Occupational Accident Reports</a></li>
+                        <li><a href="#servicios">Scene analysis and reconstruction</a></li>
+                        <li><a href="#servicios">Technical expert reports</a></li>
+                        <li><a href="#servicio2">Expert points</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="servicio.html">Terms of Service</a></li>
+                        <li><a href="politica.html">Privacy Policy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Criminalisticaok. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="#inicio" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="Static/js/scripts.js"></script>
+</body>
+</html>
