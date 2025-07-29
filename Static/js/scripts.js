@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    setInterval(nextSlide, 5000);
+    setInterval(nextSlide, 12000);
 
     let statsAnimated = false;
 
