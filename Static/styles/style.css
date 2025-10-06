@@ -1596,3 +1596,24 @@ body.light-mode {
     animation: lightModeFadeIn 0.6s ease forwards;
 
 }
+
+body.dark-mode .convenios-slider::before {
+  left: 0;
+  background: linear-gradient(to right, var(--dark-background) 0%, transparent 100%);
+}
+
+body.dark-mode .convenios-slider::after {
+    right: 0;
+    background: linear-gradient(to left, var(--dark-background) 0%, transparent 100%);
+}
+
+body.dark-mode .convenios-section {
+    background-color: var(--dark-background);
+    text-align: center;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+body.dark-mode .convenios-slider-track img {
+  filter: brightness(0) invert(1);
+}
