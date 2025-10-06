@@ -353,3 +353,12 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.appendChild(mainButton);
     document.body.appendChild(extraButtonsContainer);
 });
+
+/*Collaborations*/
+const conveniosTrack = document.querySelector('.convenios-slider-track');
+if (conveniosTrack) {
+    const clone = conveniosTrack.innerHTML;
+    for (let i = 0; i < 6; i++) { 
+      conveniosTrack.innerHTML += clone;
+    }
+}
