@@ -1,4 +1,4 @@
- @import 'normalize.css';
+@import 'normalize.css';
 :root {
     --primary-color: #0a359d;
     --secondary-color: #ff9719;
@@ -494,6 +494,81 @@ section {
     margin-bottom: 8px;
     color: black;
 }
+/* Contenedor flexible para el modal */
+.modal-body-container {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap; 
+    margin-top: 20px;
+}
+
+.modal-visual, .modal-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Collage estilo Bento Grid */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    gap: 10px;
+}
+
+.bento-item {
+    background-color: #ddd;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+}
+
+.item-1 { grid-row: span 2; background-image: url('../Images/Capacitaciones 4.png'); } 
+.item-2 { background-image: url('../Images/Capacitaciones 2.png'); }
+.item-3 { background-image: url('../Images/Capacitaciones 3.png'); }
+
+/* Estilo del botón "Ver más" tipo Udemy */
+.btn-udemy {
+    display: block;
+    background-color: #1c1d1f; 
+    color: white !important;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+.btn-udemy:hover {
+    background-color: #3e4143;
+}
+
+.modal-features {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.modal-features li {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.modal-features i {
+    color: var(--primary-color);
+    margin-right: 8px;
+}
+
+.whatsapp-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: var(--primary-color);
+    text-decoration: none;
+}
 
 /* About Section */
 .about {
@@ -708,80 +783,79 @@ section {
 
 /* Collaborations section */
 .convenios-section {
-  text-align: center;
-  padding: 50px 0;
-  overflow: hidden;
+    text-align: center;
+    padding: 50px 0;
+    overflow: hidden;
 }
 
 .convenios-slider {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .convenios-slider-track {
-  display: flex;
-  gap: 60px;
-  width: max-content;
-  animation: conveniosScroll 50s linear infinite;
-
+    display: flex;
+    gap: 60px;
+    width: max-content;
+    animation: conveniosScroll 50s linear infinite;
 }
 
 .convenios-slider-track a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .convenios-slider-track img {
-  height: 45px;
-  width: auto;
-  object-fit: contain;
-  filter: grayscale(100%);
-  opacity: 0.9;
-  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.9;
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
 }
 
 .convenios-slider-track img:hover {
-  transform: scale(1.1);
-  filter: grayscale(0%);
-  opacity: 1;
+    transform: scale(1.1);
+    filter: grayscale(0%);
+    opacity: 1;
 }
 
 @keyframes conveniosScroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .convenios-slider-track::after {
-  content: attr(data-duplicate);
+    content: attr(data-duplicate);
 }
 
 .convenios-slider::before,
 .convenios-slider::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100px;
-  height: 100%;
-  z-index: 1;
-  pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
 }
 
 .convenios-slider::before {
-  left: 0;
-  background: linear-gradient(to right, var(--light-color) 0%, transparent 100%);
+    left: 0;
+    background: linear-gradient(to right, var(--light-color) 0%, transparent 100%);
 }
 
 .convenios-slider::after {
-  right: 0;
-  background: linear-gradient(to left, var(--light-color) 0%, transparent 100%);
+    right: 0;
+    background: linear-gradient(to left, var(--light-color) 0%, transparent 100%);
 }
 
 /* Contact Section */
@@ -1062,10 +1136,6 @@ footer {
     background: var(--secondary-color); 
 }
 
-/* ========================
-        ANIMACIONES 
-========================= */
-
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -1143,11 +1213,6 @@ footer {
         color: #111;
     }
 }
-
-
-/* ========================
-        RESPONSIVE
-========================= */
 
 @media (max-width: 768px) {
     .navbar {
@@ -1676,8 +1741,8 @@ body.light-mode {
 }
 
 body.dark-mode .convenios-slider::before {
-  left: 0;
-  background: linear-gradient(to right, var(--dark-background) 0%, transparent 100%);
+    left: 0;
+    background: linear-gradient(to right, var(--dark-background) 0%, transparent 100%);
 }
 
 body.dark-mode .convenios-slider::after {
@@ -1693,5 +1758,48 @@ body.dark-mode .convenios-section {
 }
 
 body.dark-mode .convenios-slider-track img {
-  filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
+body.dark-mode .modal-body-container {
+    color: #e5e7eb;
+}
+body.dark-mode .black{
+    color: #cbd5f5;
+}   
+body.dark-mode .modal-visual,
+body.dark-mode .modal-info {
+    background: transparent;
+}
+
+body.dark-mode .bento-item {
+    filter: brightness(0.85) contrast(1.05);
+}
+
+/* Botón estilo Udemy */
+body.dark-mode .btn-udemy {
+    background-color: #ff9719;
+    color: #020617 !important;
+}
+
+body.dark-mode .btn-udemy:hover {
+    background-color: #fbbf24;
+}
+
+/* Lista de features */
+body.dark-mode .modal-features li {
+    color: #cbd5f5;
+}
+
+body.dark-mode .modal-features i {
+    color: #fbbf24;
+}
+
+/* Link WhatsApp */
+body.dark-mode .whatsapp-link {
+    color: #93c5fd;
+}
+
+body.dark-mode .whatsapp-link:hover {
+    text-decoration: underline;
 }

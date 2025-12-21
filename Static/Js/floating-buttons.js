@@ -96,16 +96,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     langToggle.addEventListener('click', () => {
         const fileMap = {
-            // Español → Inglés
-            'index.html': 'Templates/Translate/enIndex.html',
-            'politica.html': 'Translate/politic.html',
-            'servicio.html': 'Translate/services.html',
+        // Español → Inglés
+        'index.html': 'Templates/Translate/enIndex.html',
+        'politica.html': 'Translate/politic.html',
+        'servicio.html': 'Translate/services.html',
+        'cursos.html': 'Translate/courses.html',
+        // Inglés → Español
+        'enIndex.html': '../../index.html',
+        'politic.html': '../politica.html',
+        'services.html': '../servicio.html',
+        'courses.html': '../cursos.html'
+    };
 
-            // Inglés → Español
-            'enIndex.html': '../../index.html',
-            'politic.html': '../politica.html',
-            'services.html': '../servicio.html'
-        };
         const pathParts = window.location.pathname.split('/');
         const currentFile = pathParts[pathParts.length - 1] || 'index.html';
         const newFile = fileMap[currentFile];
